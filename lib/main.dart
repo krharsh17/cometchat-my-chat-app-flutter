@@ -42,12 +42,12 @@ class _MyHomePageState extends State<MyHomePage> {
     UIKitSettings uiKitSettings = (UIKitSettingsBuilder()
           ..subscriptionType = CometChatSubscriptionType.allUsers
           ..autoEstablishSocketConnection = true
-          ..region = "in" //Replace with your region
-          ..appId = "248878dbe681a1ba" //replace with your app Id
-          ..authKey = "34d958979220ec12eacd9fb4818e08f04c73d5bf"
+           ..region = "<your-region>" // Replace with your region
+          ..appId = "<your-app-id>" // Replace with your app ID
+          ..authKey = "<your-auth-key>"
           ..extensions = CometChatUIKitChatExtensions
-              .getDefaultExtensions() //replace this with empty array you want to disable all extensions
-        ) //replace with your auth Key
+              .getDefaultExtensions() // Replace this with empty array; you want to disable all extensions
+        ) // Replace with your auth key
         .build();
 
     CometChatUIKit.init(
